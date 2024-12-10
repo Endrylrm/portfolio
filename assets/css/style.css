@@ -1,11 +1,13 @@
 @import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root,
 :root[data-theme="dark"] {
   --primary-color: #f5f5f5;
   --primary-bg-color: #343434;
   --secondary-bg-color: #474747;
-  --border-color: #474747;
+  --primary-border-color: #474747;
+  --secondary-border-color: #b8b8b8;
   --title-color: #f5f5f5;
   --text-color: #8f8f8f;
   --link-color: #8f8f8f;
@@ -16,10 +18,11 @@
   --primary-color: #343434;
   --primary-bg-color: #f5f5f5;
   --secondary-bg-color: #cccccc;
-  --border-color: #cccccc;
+  --primary-border-color: #cccccc;
+  --secondary-border-color: #7a7a7a;
   --title-color: #343434;
-  --text-color: #3d3d3d;
-  --link-color: #3d3d3d;
+  --text-color: #5c5c5c;
+  --link-color: #5c5c5c;
   --icon-color: #7a7a7a;
 }
 
@@ -29,7 +32,7 @@ html[data-theme="light"] .brand__logo {
 
 body {
   background-color: var(--primary-bg-color);
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--text-color);
   transition: 0.5s linear;
 }
@@ -46,6 +49,22 @@ a:hover {
 
 i {
   color: var(--icon-color);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+p {
+  font-size: 1.25rem;
+  text-align: justify;
 }
 
 .header {
@@ -83,7 +102,7 @@ i {
 .menu--mobile {
   width: 100vw;
   justify-content: space-between;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--primary-border-color);
   position: fixed;
   bottom: 0;
 }
@@ -131,17 +150,115 @@ i {
   gap: 1rem;
 }
 
+.menu--social {
+  gap: 1rem;
+}
+
+.button {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 3.125rem;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.button span,
+.button i {
+  font-size: 1.25rem;
+}
+
+.button--primary {
+  border: 1px solid var(--primary-color);
+}
+
+.button--primary span {
+  color: var(--primary-color);
+}
+
+.button--primary:hover,
+.button--primary:hover span,
+.button--primary:hover i {
+  color: var(--primary-bg-color);
+  background-color: var(--primary-color);
+  transform: scale(1.05);
+  transition: 0.25s ease-in-out;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2;
+  padding: 1rem 1rem;
+}
+
+.main__content-about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-bg-color);
+  padding: 6rem 1rem 2rem 1rem;
+  margin-top: -5rem;
+}
+
+.tech h2 {
+  text-transform: none;
+  margin-bottom: 1rem;
+}
+
+.tech__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.tech__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  gap: 1rem;
+  border: 1px solid var(--secondary-border-color);
+  border-radius: 50rem;
+}
+
+.tech__logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .header {
     position: fixed;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--primary-border-color);
     padding: 1rem 6rem;
     background: var(--primary-bg-color);
   }
@@ -160,7 +277,32 @@ footer {
   }
 
   main {
-    padding: 5rem;
+    padding: 7rem 5rem 3rem 5rem;
+  }
+
+  .main__content-about img {
+    height: 600px;
+    object-fit: scale-down;
+  }
+
+  .tech {
+    padding: 8rem 1rem 2rem 1rem;
+    margin-top: -10rem;
+  }
+
+  footer {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main__content-about .button {
+    width: auto;
+  }
+
+  .tech {
+    gap: 2rem;
+    flex-direction: row;
   }
 }
 
