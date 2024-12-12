@@ -49,10 +49,19 @@ a:hover {
 
 i {
   color: var(--icon-color);
+  transition: 0.3s ease-in-out;
 }
 
 h1 {
   font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 h1,
@@ -84,6 +93,7 @@ p {
 .header__brand .brand__logo {
   width: 3.25rem;
   height: 3.25rem;
+  transition: 1s ease-in-out;
 }
 
 #toggle-theme {
@@ -128,6 +138,11 @@ p {
   font-weight: 600;
 }
 
+.menu__link.link--hover:hover .menu__icon,
+.menu__link.link--hover:hover .menu__text {
+  font-size: 2rem;
+}
+
 .menu__icon,
 .menu__text {
   color: var(--text-color);
@@ -162,9 +177,11 @@ p {
   justify-content: center;
   background: transparent;
   border-radius: 3.125rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   width: 100%;
   cursor: pointer;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   transition: 0.25s ease-in-out;
 }
 
@@ -174,7 +191,6 @@ p {
 }
 
 .button--primary {
-  border: 1px solid var(--primary-color);
   background: var(--primary-bg-color);
 }
 
@@ -199,13 +215,26 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
-.main__content-about {
+.main__content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.main__about {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main__about img {
+  height: 300px;
+  object-fit: contain;
 }
 
 .tech {
@@ -247,6 +276,61 @@ main {
   height: 2.5rem;
 }
 
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-bg-color);
+  padding: 2rem 1rem;
+}
+
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem 0;
+}
+
+.card__cover {
+  width: 100%;
+  object-fit: contain;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card__description {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.card__list {
+  margin-left: 1.5rem;
+}
+
+.card__item {
+  list-style: disc;
+  font-size: 0.9rem;
+}
+
+.card__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -286,9 +370,14 @@ footer p {
     padding: 7rem 5rem 3rem 5rem;
   }
 
-  .main__content-about img {
-    height: 600px;
-    object-fit: scale-down;
+  .main__content h1 {
+    text-align: center;
+  }
+
+  .main__content p,
+  .main__content ul,
+  .main__content a {
+    align-self: center;
   }
 
   .tech {
@@ -296,19 +385,50 @@ footer p {
     margin-top: -10rem;
   }
 
+  #projects {
+    padding: 2rem 8rem;
+  }
+
   footer {
     margin-bottom: 0;
   }
 }
 
+@media (min-width: 992px) {
+  .main__about {
+    flex-flow: row wrap;
+  }
+
+  .projects__card {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .projects__card.card--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .card__cover {
+    width: 55%;
+  }
+
+  .card__body {
+    width: 45%;
+  }
+}
+
 @media (min-width: 1200px) {
-  .main__content-about .button {
+  .main__content .button {
     width: auto;
   }
 
   .tech {
     gap: 2rem;
     flex-direction: row;
+  }
+
+  #projects {
+    padding: 2rem 10rem;
   }
 }
 

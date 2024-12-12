@@ -85,26 +85,34 @@
       </ul>
     </nav>
     <main>
-      <div class="main__content-about">
+      <div class="main__content">
         <h1>
           Transformando Ideias em Soluções: Meu Caminho em Análise e
           Desenvolvimento de Sistemas
         </h1>
-        <p>Endryl Richard, estudante de ADS na PUCPR.</p>
+        <div class="main__about">
+          <img src="assets/images/photo-1.jpg" alt="Endryl Richard" />
+          <p>
+            Bem vindo, meu nome é Endryl Richard Monteiro, eu sou um estudante
+            de ADS na PUCPR.
+          </p>
+        </div>
         <ul class="menu menu--social">
           <li>
-            <a class="menu__link" href="https://github.com/endrylrm"
+            <a class="menu__link link--hover" href="https://github.com/endrylrm"
               ><i class="menu__icon bi bi-github"></i
             ></a>
           </li>
           <li>
-            <a class="menu__link" href="https://www.instagram.com/endrylrm"
+            <a
+              class="menu__link link--hover"
+              href="https://www.instagram.com/endrylrm"
               ><i class="menu__icon bi bi-instagram"></i
             ></a>
           </li>
           <li>
             <a
-              class="menu__link"
+              class="menu__link link--hover"
               href="https://www.linkedin.com/in/endryl-richard-monteiro-3bb14b185/"
               ><i class="menu__icon bi bi-linkedin"></i
             ></a>
@@ -122,7 +130,7 @@
       </div>
     </main>
     <section class="tech">
-      <h2>Minhas Especialidades</h2>
+      <h2>Skills</h2>
       <ul class="tech__list">
         <li class="tech__item">
           <img
@@ -168,10 +176,496 @@
         </li>
       </ul>
     </section>
+    <section id="projects">
+      <h2>Meus Projetos</h2>
+      <div class="projects__card">
+        <img
+          class="card__cover"
+          src="assets/images/doc-generator.png"
+          alt="Interface do gerador de termos"
+        />
+        <div class="card__body">
+          <h3 class="card__title">Gerador de Termos</h3>
+          <p class="card__description">
+            Gerar Termos de Responsabilidade através de HTML/CSS.
+          </p>
+          <ul class="card__list">
+            <li class="card__item">Gerar termos rapidamente.</li>
+            <li class="card__item">Layouts dos termos customizaveis.</li>
+            <li class="card__item">
+              Preview de impressão dos termos através do Software.
+            </li>
+            <li class="card__item">Software Desktop para Windows.</li>
+          </ul>
+          <ul class="tech__list">
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/HTML5-logo.png"
+                alt="Logo - HTML5"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/CSS3-logo.png"
+                alt="Logo - CSS"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/Python-logo.png"
+                alt="Logo - Python"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/Qt-logo.png"
+                alt="Logo - QT"
+              />
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a
+              href="https://github.com/Endrylrm/doc-generator-gui"
+              target="_blank"
+            >
+              <button class="button button--primary">
+                <span>Ver o repositório</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img
+          class="card__cover"
+          src="assets/images/spiderman.png"
+          alt="Interface do gerador de termos"
+        />
+        <div class="card__body">
+          <h3 class="card__title">Homem-Aranha - Multiversos</h3>
+          <p class="card__description">
+            Explore as diversas versões do Homem-Aranha em realidades paralelas.
+          </p>
+          <ul class="card__list">
+            <li class="card__item">Site desenvolvido para Desktop.</li>
+            <li class="card__item">
+              Contém descrições dos filmes realizados dos 3 homens-aranhas.
+            </li>
+            <li class="card__item">Caroussel 3D.</li>
+          </ul>
+          <ul class="tech__list">
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/HTML5-logo.png"
+                alt="Logo - HTML5"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/CSS3-logo.png"
+                alt="Logo - CSS"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/JavaScript-logo.png"
+                alt="Logo - Javascript"
+              />
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a
+              href="https://github.com/Endrylrm/spider-man-multiverses"
+              target="_blank"
+            >
+              <button class="button button--primary">
+                <span>Ver o repositório</span>
+              </button>
+            </a>
+            <a
+              href="https://endrylrm.github.io/spider-man-multiverses/"
+              target="_blank"
+            >
+              <button class="button button--primary">
+                <span>Preview</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card">
+        <img
+          class="card__cover"
+          src="assets/images/pokedex.png"
+          alt="Interface do gerador de termos"
+        />
+        <div class="card__body">
+          <h3 class="card__title">Pokedex</h3>
+          <p class="card__description">
+            Veja os status e informações de seus Pokemons favoritos com a
+            Pokedex.
+          </p>
+          <ul class="card__list">
+            <li class="card__item">
+              Pokemon na palma de sua mão - Mobile first!
+            </li>
+            <li class="card__item">Pokedex da primeira geração.</li>
+            <li class="card__item">
+              Uso da PokeAPI para request de informações.
+            </li>
+            <li class="card__item">
+              Tipos, IDs, Status e textos referentes a cada Pokemon.
+            </li>
+            <li class="card__item">
+              Gifs animados de cada Pokemon na página de status.
+            </li>
+          </ul>
+          <ul class="tech__list">
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/HTML5-logo.png"
+                alt="Logo - HTML5"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/CSS3-logo.png"
+                alt="Logo - CSS"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/JavaScript-logo.png"
+                alt="Logo - Javascript"
+              />
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://github.com/Endrylrm/pokedex" target="_blank">
+              <button class="button button--primary">
+                <span>Ver o repositório</span>
+              </button>
+            </a>
+            <a href="https://endrylrm.github.io/pokedex/" target="_blank">
+              <button class="button button--primary">
+                <span>Preview</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img
+          class="card__cover"
+          src="assets/images/mundo-invertido.png"
+          alt="Interface do gerador de termos"
+        />
+        <div class="card__body">
+          <h3 class="card__title">Mundo Invertido</h3>
+          <p class="card__description">
+            Uma jornada para quem não tem medo do desconhecido.
+          </p>
+          <ul class="card__list">
+            <li class="card__item">Site desenvolvido para Desktop.</li>
+            <li class="card__item">
+              Contém descrições da série do Stranger Things.
+            </li>
+            <li class="card__item">Trocador de temas.</li>
+          </ul>
+          <ul class="tech__list">
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/HTML5-logo.png"
+                alt="Logo - HTML5"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/CSS3-logo.png"
+                alt="Logo - CSS"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/JavaScript-logo.png"
+                alt="Logo - Javascript"
+              />
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a
+              href="https://github.com/Endrylrm/mundo-invertido"
+              target="_blank"
+            >
+              <button class="button button--primary">
+                <span>Ver o repositório</span>
+              </button>
+            </a>
+            <a
+              href="https://endrylrm.github.io/mundo-invertido/"
+              target="_blank"
+            >
+              <button class="button button--primary">
+                <span>Preview</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card">
+        <img
+          class="card__cover"
+          src="assets/images/yugioh.png"
+          alt="Interface do gerador de termos"
+        />
+        <div class="card__body">
+          <h3 class="card__title">Yu-Gi-Oh - JoKenPo</h3>
+          <p class="card__description">
+            Jogo de cartas com a temática de Yu-Gi-Oh no estilo Pedra, Papel e
+            Tesoura.
+          </p>
+          <ul class="card__list">
+            <li class="card__item">Jogabilidade simples e intuitiva.</li>
+            <li class="card__item">Sistema de pontuação e vitórias.</li>
+            <li class="card__item">Efeitos visuais e sonoros.</li>
+          </ul>
+          <ul class="tech__list">
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/HTML5-logo.png"
+                alt="Logo - HTML5"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/CSS3-logo.png"
+                alt="Logo - CSS"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/JavaScript-logo.png"
+                alt="Logo - Javascript"
+              />
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a
+              href="https://github.com/Endrylrm/yugioh-jokenpo"
+              target="_blank"
+            >
+              <button class="button button--primary">
+                <span>Ver o repositório</span>
+              </button>
+            </a>
+            <a
+              href="https://endrylrm.github.io/yugioh-jokenpo/"
+              target="_blank"
+            >
+              <button class="button button--primary">
+                <span>Preview</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img
+          class="card__cover"
+          src="assets/images/memory-game.png"
+          alt="Interface do gerador de termos"
+        />
+        <div class="card__body">
+          <h3 class="card__title">Jodo da Memória</h3>
+          <p class="card__description">
+            Um pequeno jogo da memória usando Emojis como as cartas.
+          </p>
+          <ul class="card__list">
+            <li class="card__item">Jogabilidade simples e intuitiva</li>
+            <li class="card__item">Sistema de pontuação e tempo.</li>
+            <li class="card__item">Animações e efeitos visuais.</li>
+          </ul>
+          <ul class="tech__list">
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/HTML5-logo.png"
+                alt="Logo - HTML5"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/CSS3-logo.png"
+                alt="Logo - CSS"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/JavaScript-logo.png"
+                alt="Logo - Javascript"
+              />
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://github.com/Endrylrm/memory-game" target="_blank">
+              <button class="button button--primary">
+                <span>Ver o repositório</span>
+              </button>
+            </a>
+            <a href="https://endrylrm.github.io/memory-game/" target="_blank">
+              <button class="button button--primary">
+                <span>Preview</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card">
+        <img
+          class="card__cover"
+          src="assets/images/piano-simulator.png"
+          alt="Interface do gerador de termos"
+        />
+        <div class="card__body">
+          <h3 class="card__title">Piano Simulator</h3>
+          <p class="card__description">
+            Um simulador de piano interativo, permitindo aos usuários tocar
+            músicas virtuais.
+          </p>
+          <ul class="card__list">
+            <li class="card__item">Interface intuitiva.</li>
+            <li class="card__item">Controle de volume.</li>
+            <li class="card__item">Habilidade de desativar as teclas.</li>
+          </ul>
+          <ul class="tech__list">
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/HTML5-logo.png"
+                alt="Logo - HTML5"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/CSS3-logo.png"
+                alt="Logo - CSS"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/JavaScript-logo.png"
+                alt="Logo - Javascript"
+              />
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a
+              href="https://github.com/Endrylrm/piano-simulator"
+              target="_blank"
+            >
+              <button class="button button--primary">
+                <span>Ver o repositório</span>
+              </button>
+            </a>
+            <a
+              href="https://endrylrm.github.io/piano-simulator/"
+              target="_blank"
+            >
+              <button class="button button--primary">
+                <span>Preview</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img
+          class="card__cover"
+          src="assets/images/detona-ralph.png"
+          alt="Interface do gerador de termos"
+        />
+        <div class="card__body">
+          <h3 class="card__title">Detona Ralph</h3>
+          <p class="card__description">
+            Um jogo divertido inspirado no filme Detona Ralph, onde você precisa
+            martelar o personagem que surge na tela.
+          </p>
+          <ul class="card__list">
+            <li class="card__item">Jogabilidade simples e intuitiva.</li>
+            <li class="card__item">Sistema de pontuação, vida e tempo.</li>
+            <li class="card__item">Efeitos sonoros.</li>
+          </ul>
+          <ul class="tech__list">
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/HTML5-logo.png"
+                alt="Logo - HTML5"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/CSS3-logo.png"
+                alt="Logo - CSS"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech__logo"
+                src="assets/images/JavaScript-logo.png"
+                alt="Logo - Javascript"
+              />
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://github.com/Endrylrm/detona-ralph" target="_blank">
+              <button class="button button--primary">
+                <span>Ver o repositório</span>
+              </button>
+            </a>
+            <a href="https://endrylrm.github.io/detona-ralph/" target="_blank">
+              <button class="button button--primary">
+                <span>Preview</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <p>
         ©2024. Todos os direitos reservados. Desenvolvido por
-        <a href="https://github.com/endrylrm">Endryl Richard Monteiro</a>
+        <a href="https://github.com/endrylrm" target="_blank"
+          >Endryl Richard Monteiro</a
+        >
       </p>
     </footer>
     <script src="assets/js/main.js"></script>
