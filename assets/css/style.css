@@ -246,6 +246,30 @@ main {
   gap: 1rem;
 }
 
+.main__typewriter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.typewriter__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.typewriter {
+  font-size: 1.25rem;
+  letter-spacing: 0.15rem;
+  width: 100%;
+  border-right: 2px solid var(--primary-color);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(23), cursor 0.4s step-end infinite alternate;
+}
+
 .main__about img {
   height: 300px;
   object-fit: contain;
@@ -607,8 +631,12 @@ footer p {
     width: auto;
   }
 
-  .main__about p {
-    padding: 2rem;
+  .main__typewriter {
+    padding: 2rem 5rem;
+  }
+
+  .typewriter {
+    font-size: 1.5rem;
   }
 
   .tech {
@@ -632,5 +660,17 @@ footer p {
 @media (min-width: 1400px) {
   .header {
     padding: 1rem 15rem;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
 }
