@@ -15,3 +15,22 @@ function changeTheme() {
     rootHtml.dataset.theme = "dark";
   }
 }
+
+const desktopMenuLinks = document.querySelectorAll(
+  ".menu--principal .menu__link"
+);
+const mobileMenuLinks = document.querySelectorAll(".menu--mobile .menu__link");
+
+desktopMenuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    desktopMenuLinks.forEach((active) => active.classList.remove("active"));
+    link.classList.add("active");
+  });
+});
+
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenuLinks.forEach((active) => active.classList.remove("active"));
+    link.classList.add("active");
+  });
+});
