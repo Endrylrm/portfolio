@@ -48,3 +48,15 @@ mobileMenuLinks.forEach((link) => {
     link.classList.add("active");
   });
 });
+
+const accordionHeaders = document.querySelectorAll(".accordion__header");
+
+accordionHeaders.forEach((accordionButton) => {
+  accordionButton.addEventListener("click", () => {
+    const accordionItem = accordionButton.parentElement;
+    const isActive = accordionItem.classList.contains("active");
+    isActive
+      ? accordionItem.classList.remove("active")
+      : accordionItem.classList.add("active");
+  });
+});

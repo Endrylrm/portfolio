@@ -9,8 +9,8 @@
   --primary-border-color: #474747;
   --secondary-border-color: #b8b8b8;
   --title-color: #f5f5f5;
-  --text-color: #8f8f8f;
-  --link-color: #8f8f8f;
+  --text-color: #a3a3a3;
+  --link-color: #a3a3a3;
   --icon-color: #b8b8b8;
 }
 
@@ -77,6 +77,10 @@ p {
   text-align: justify;
 }
 
+span {
+  display: inline-block;
+}
+
 .header {
   display: flex;
   flex-flow: row wrap;
@@ -141,7 +145,6 @@ p {
 
 .menu--social .menu__link span {
   transition: 0.5s ease-in-out;
-  display: inline-block;
   padding-left: 0.2rem;
 }
 
@@ -352,6 +355,14 @@ main {
   background-color: var(--secondary-bg-color);
 }
 
+.about__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 .about__image {
   display: flex;
   flex-direction: column;
@@ -374,7 +385,90 @@ main {
 }
 
 .about__description p {
-  text-align: left;
+  text-align: justify;
+}
+
+.about__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.about__background {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.educational-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accordion {
+  border: 1px solid var(--secondary-border-color);
+  width: 100%;
+}
+
+.accordion__header {
+  display: flex;
+  padding: 0.5rem 1.75rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-bg-color);
+  border: 1px solid var(--secondary-border-color);
+  gap: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.accordion__header span {
+  color: var(--title-color);
+  font-size: 1.15rem;
+}
+
+.accordion__body {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.accordion__body ul {
+  padding: 0 1rem;
+}
+
+.accordion__body ul li {
+  list-style: disc;
+}
+
+.accordion__item.active .accordion__header {
+  filter: invert(1);
+}
+
+.accordion__item.active .accordion__body {
+  display: flex;
+}
+
+.accordion__item.active .bi-caret-down-fill {
+  transform: rotate(180deg);
 }
 
 #contact {
@@ -444,11 +538,6 @@ footer p {
     padding: 2rem 8rem;
   }
 
-  #about {
-    flex-direction: row;
-    padding: 2rem 8rem;
-  }
-
   #contact {
     padding: 2rem 8rem;
   }
@@ -486,6 +575,30 @@ footer p {
 
   .card__body {
     width: 45%;
+  }
+
+  #about {
+    padding: 2rem 6rem;
+  }
+
+  .about__background {
+    gap: 4rem;
+  }
+
+  .about__main {
+    flex-direction: row;
+  }
+
+  .about__background {
+    flex-direction: row;
+  }
+
+  .educational-background {
+    width: 50%;
+  }
+
+  .courses {
+    width: 50%;
   }
 }
 
