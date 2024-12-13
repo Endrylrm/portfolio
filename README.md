@@ -12,11 +12,7 @@ Este repositório reflete meu aprendizado até agora e estou continuamente traba
 
 ## 💻 Projetos
 
-Aqui estão alguns dos projetos que desenvolvi:
-
-- [Projeto 1]: TODO
-
-Observação: Para mais detalhes, acesse os repositórios de cada projeto.
+No Portfolio possuí todos os projetos realizados por mim.
 
 ## 🛠️ Tecnologias que Estou Aprendendo
 
