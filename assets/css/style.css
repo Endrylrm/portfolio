@@ -277,6 +277,7 @@ main {
 .main__about img {
   height: 300px;
   object-fit: contain;
+  border-radius: 50%;
 }
 
 .tech {
@@ -588,6 +589,10 @@ footer p {
     flex-flow: row wrap;
   }
 
+  .main__typewriter {
+    padding: 2rem 4rem;
+  }
+
   .projects__card {
     flex-direction: row;
     align-items: center;
@@ -636,7 +641,7 @@ footer p {
   }
 
   .main__typewriter {
-    padding: 2rem 5rem;
+    padding: 2rem 6rem;
   }
 
   .typewriter {
@@ -664,6 +669,10 @@ footer p {
 @media (min-width: 1400px) {
   .header {
     padding: 1rem 15rem;
+  }
+
+  .main__typewriter {
+    padding: 2rem 8rem;
   }
 }
 
