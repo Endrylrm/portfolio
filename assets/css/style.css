@@ -504,7 +504,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 1.5rem 1rem;
   gap: 1rem;
 }
