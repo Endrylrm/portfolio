@@ -504,7 +504,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 1.5rem 1rem;
   gap: 1rem;
 }
@@ -614,15 +614,12 @@ footer p {
     padding: 2rem 6rem;
   }
 
-  .about__background {
-    gap: 4rem;
-  }
-
   .about__main {
     flex-direction: row;
   }
 
   .about__background {
+    gap: 4rem;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
